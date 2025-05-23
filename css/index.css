@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  background-color: rgb(219, 239, 247);
+}
+
+h1 {
+  color: rgb(71, 124, 185);
+  text-align: center;
+  text-shadow: 0.05em 0.03em #2e2e6b;
+  font-style: italic;
+  font-size: 2.5em;
+}
+
+footer {
+  background-color: rgba(184, 222, 247, 0.776);
+  justify-items: center;
+  font-size: 1.2em;
+  margin-top: 1em;
+  padding: 1em;
+  
+  
+}
