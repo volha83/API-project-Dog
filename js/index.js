@@ -44,17 +44,14 @@ footer.appendChild(copyright);
 // fetchDog();
 //*********************************************************** */
 
-const API_KEY = "live_YCILmBYJjzb5DSVDBsj1xB9bYwJrPjxiIbP9pWqOZklrsShbHtWjtET4NG0abWpF";
-fetch(`https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=${API_KEY}`)
+// const API_KEY = "live_YCILmBYJjzb5DSVDBsj1xB9bYwJrPjxiIbP9pWqOZklrsShbHtWjtET4NG0abWpF";
+fetch(`https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1`)
 .then(response => response.json())
 .then(dogs => {
   dogs.forEach(dog => {
     console.log('Dog info:', dog)
-    // console.log(`picture: ${dog.url}`)
+    console.log(`picture: ${dog.url}`)
     console.log(`size: ${dog.width}, ${dog.height} ` )
   });
 })
 .catch(error => console.error('Error', error));
-
-
-
