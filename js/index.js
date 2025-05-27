@@ -9,25 +9,27 @@ footer.appendChild(copyright);
 /* fetch API-10  */
 //const API_KEY = "live_YCILmBYJjzb5DSVDBsj1xB9bYwJrPjxiIbP9pWqOZklrsShbHtWjtET4NG0abWpF";
 // fetch(`https://api.thedogapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=${API_KEY}`)
-fetch(`https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=10`)
-    .then((response) => response.json())
-    .then((dogs) => {
-        console.log("Dogs:", dogs);
+fetch(
+  `https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=10`
+)
+  .then((response) => response.json())
+  .then((dogs) => {
+    console.log("Dogs:", dogs);
     dogs.forEach((dog) => {
-        console.log("Dog info:", dog);
-        console.log(`picture: ${dog.url}`);
-        console.log(`size: ${dog.width}, ${dog.height} `);
-        // console.log(`other: ${dog.breeds[0].name}`);
-        
-        const projectSection = document.getElementById("Project_10");
-        const projectList = projectSection.querySelector("ul");
-        const project = document.createElement("li");
-        project.innerHTML = `<img src="${dog.url}" alt="Dog Photo" class="dogPhoto" />`;
+      console.log("Dog info:", dog);
+      console.log(`picture: ${dog.url}`);
+      console.log(`size: ${dog.width}, ${dog.height} `);
+      // console.log(`other: ${dog.breeds[0].name}`);
 
-        projectList.appendChild(project);
-        });
-    })
-.catch((error) => console.error("Error", error));
+      const projectSection = document.getElementById("Project_10");
+      const projectList = projectSection.querySelector("ul");
+      const project = document.createElement("li");
+      project.innerHTML = `<img src="${dog.url}" alt="Dog Photo" class="dogPhoto" />`;
+
+      projectList.appendChild(project);
+    });
+  })
+  .catch((error) => console.error("Error", error));
 
 /************************************************* */
 //  async function fetchDog() {
@@ -64,6 +66,5 @@ fetch(`https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format
 //   }
 // }
 // fetchDog();
-        
-//*********************************************************** */
 
+//*********************************************************** */
