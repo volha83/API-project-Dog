@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {   
+    font-family: "Ancizar Serif", serif;
+    background-color: rgb(219, 239, 247);
+}
+
+h1 {
+    color: rgb(71, 124, 185);
+    text-align: center;
+    text-shadow: 0.05em 0.03em #2e2e6b;
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: rgb(100, 8, 204);
+    text-align: center;
+    font-size: 2em;
+}
+
+.navMenu {
+    background-color: darkblue;    
+    justify-content: space-around;
+    /* position:fixed; */
+    
+    margin: 0em;
+    padding: 0.5em;
+    width: 100%;
+  /* height: 7%; */
+
+}
+
+.navMenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60%;
+    font-weight: bold;
+    font-size: 1.8em;
+    padding: 0.5em;
+}
+
+.navMenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.navMenu ul {
+  :hover {
+    color: rgb(137, 137, 247);
+    transform: translateY(-2px);
+    }
+}
+
+.dogPhoto {
+    border-radius: 0.5em;
+    box-shadow: 0.6em 0.5em 0.6em #4375a3;
+    width: 12em;
+    height: auto;
+    border: solid darkblue 3px;
+}
+
+.dogCards li {
+:hover {
+    color: rgb(137, 137, 247);
+    transform: translateY(-2px);
+    }
+}
+
+.dogSection {
+    background-color: #61b9e2;
+ 
+}
+
+.dogCards {
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    flex-direction: column-reverse;
+    gap: 2.5em;
+    margin: 1em;
+    padding: 1em;
+
+}
+
+.dogCards li {
+    background-color: #61b9e2;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    border: none;
+}
+
+#Project_1 {
+    background-color: green;
+}
+
+footer {
+    background-color: rgba(184, 222, 247, 0.776);
+    justify-items: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    padding: 1em;
+}
