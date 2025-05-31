@@ -8,6 +8,7 @@
     <meta name="keywords" content="API, HTML, CSS, JavaScript" />
     <meta name="author" content="Volha Padlipskaya" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,39 +17,61 @@
     />
   </head>
   <body>
-    <br />
-    <h1>Project API</h1>
-    <br />
-    <nav class="navMenu">
-      <ul>
-        <li><a href="#Project_10">Home</a></li>
-        <li><a href="#Project_1">Make a choice</a></li>
-        <li><a href=""></a>Guess who?</li>
-      </ul>
-    </nav>
+    <div class="mainSection">
+      <section id="main">
+        <div class="titleMenu">
+          <img src="img/myPet1.jpg" alt="My Dog" class="myPet" />
+          <h3>Dog API Project</h3> 
+          <h1>The best pets in the world</h1>
+        </div>
 
-    <section id="Project_10">
-      <div class="dogSection">
-        <br />
-        <h2>Dogs</h2>
-        <br />
-        <ul class="dogCards"></ul>
-        <br />
-      </div>
-    </section>
+        <nav class="navMenu">
+          <ul>
+            <li><a href="#Project_10" id="homeButton">Finnish Spitz |</a></li>
+            <li><a href="#Project_1" id="choiceButton" >Make a choice |</a></li>
+            <li><a href="#Project_guess" id="guessButton">Guess who?</a></li>    
+          </ul>
+        </nav>
+      </section>
 
-    <section id="Project_1">
-      <div class="dogSection">
-        <br />
-        <h2>One dog</h2>
-        <br />
-        <ul class="dogCards"></ul>
-        <br />
-      </div>
-    </section>
+      <section id="Project_10">
+        <div class="dogSection">
+          <br />
+          <br>
+          <h4>Beautiful photos of dogs</h4>
+          <br />
+          <ul class="dogPic"></ul>
+          <br />
+        </div>
+      </section>
+      <br>
+      <section id="Project_1">
+        <div class="dogAbout">
+          <br />
+          <ul>
+          </ul>
+          <br />  
+          </div>
+      </section>
+  
+      <section id="Project_guess">
+        <div class="dogGuess">
+          <h3>Let's play a game!</h3>
+          <br>
+          <br>
+          <h5>Read a description:</h5>
+          <br>
+          <ul>
+          </ul> 
+          <br>
+          <h5>What do you think?</h5>
+          <br>
+          <button type="submit" id="but_submit"><span>Who is it?</span></button>
+        </div>
+      </section>
 
-    <footer></footer>
-
-    <script src="js/index.js"></script>
+      <footer></footer>
+      <script src="js/index.js"></script>
+    </div>
   </body>
 </html>

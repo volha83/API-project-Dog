@@ -1,109 +1,217 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-body {   
-    font-family: "Ancizar Serif", serif;
-    background-color: rgb(219, 239, 247);
+body {
+  font-family: "Ancizar Serif", serif;
+  background-color: rgb(240, 242, 255);
 }
 
 h1 {
-    color: rgb(71, 124, 185);
-    text-align: center;
-    text-shadow: 0.05em 0.03em #2e2e6b;
-    font-style: italic;
-    font-size: 2.5em;
+  color: #5603ad;
+  /* text-align: center; */
+  text-shadow: 0.08em 0.02em #d3bfe2;
+  font-style: italic;
 }
 
 h2 {
-    color: rgb(100, 8, 204);
-    text-align: center;
-    font-size: 2em;
+  /* text-align: center; */
+  font-style: italic;
+}
+
+h3 {
+  /* text-align: center; */
+  font-style: italic;
+}
+
+h4 {
+  /* margin-left: 30%; */
+  font-style: italic;
+}
+
+h5 {
+  color: rgb(100, 8, 204);
+  /* font-weight: bold; */
+  /* font-size: 1.2em; */
+  text-align: center;
+}
+
+h2, h3, h4 {
+  color: rgb(100, 8, 204);
+  text-shadow: 0.05em 0.03em rgb(240, 242, 255);
+}
+
+.mainSection {
+  width: 100%;
+  margin: 0;
+}
+
+.myPet {
+  /* width: auto;
+  height: 4em; */
+  border-radius: 20em;
+  box-shadow: 0 0 0.8em 0.3em #8253ce;
+  border: solid rgb(227, 221, 238) 3px;
+  padding: 0.1em;
+  margin: 0.6em;
+}
+
+.titleMenu {
+  display: flex;
+  
+}
+
+/* .titleMenu h3 {
+  margin-left: 0.3em;
+  margin-top: 2em;
+} */
+
+/* .titleMenu h1 {
+  margin-left: 5em;
+  margin-top: 0.5em;
+} */
+
+.titleMenu,
+footer {
+  background-color: rgb(230, 225, 243);
 }
 
 .navMenu {
-    background-color: darkblue;    
-    justify-content: space-around;
-    /* position:fixed; */
-    
-    margin: 0em;
-    padding: 0.5em;
-    width: 100%;
-  /* height: 7%; */
-
+  background-color: #5603ad;
+  border: solid rgb(227, 221, 238) 3px;
+  box-shadow: 0.4em 0.1em 0.4em #8253ce;
+  justify-content: space-around;
+  position: fixed;
+  margin-top: 0;
+  /* margin-left: 70%; */
+  padding: 0.3em;
+  /* width: 28%; */
+  border-radius: 0.5em;
 }
 
 .navMenu ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 60%;
-    font-weight: bold;
-    font-size: 1.8em;
-    padding: 0.5em;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  /* font-size: 1.7em; */
 }
 
 .navMenu a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: rgb(137, 137, 247);
 }
 
 .navMenu ul {
   :hover {
-    color: rgb(137, 137, 247);
-    transform: translateY(-2px);
-    }
+    color: rgb(227, 221, 238);
+    transform: translateY(-1px);
+  }
 }
 
-.dogPhoto {
-    border-radius: 0.5em;
-    box-shadow: 0.6em 0.5em 0.6em #4375a3;
-    width: 12em;
-    height: auto;
-    border: solid darkblue 3px;
+.dogPhoto,
+.dogPhoto1 {
+  border-radius: 0.5em;
 }
 
-.dogCards li {
-:hover {
-    color: rgb(137, 137, 247);
-    transform: translateY(-2px);
-    }
+/* .dogPhoto {
+  width: 12em;
+  height: auto;
+} */
+
+.dogPic {
+  justify-content: space-around;
+  display: grid;
+  /* grid-template-columns: auto auto auto auto auto; */
+  flex-direction: column-reverse;
+  /* gap: 2em; */
+  /* margin: 1em; */
+  justify-content: center;
 }
 
-.dogSection {
-    background-color: #61b9e2;
- 
+.dogPic li {
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.8em 0.3em #8253ce;
+  border: solid rgb(227, 221, 238) 3px;
+  padding: 0.3em;
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse; 
+  /* justify-items: center; */
 }
 
-.dogCards {
-    justify-content: space-around;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    flex-direction: column-reverse;
-    gap: 2.5em;
-    margin: 1em;
-    padding: 1em;
-
+#Project_10,
+#Project_1,
+#Project_guess {
+  background-color: rgb(240, 242, 255);
 }
 
-.dogCards li {
-    background-color: #61b9e2;
-    border-radius: 0.5em;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    border: none;
+.dogSection,
+.dogAbout,
+.dogGuess {
+  background-color: rgb(197, 182, 236);
 }
 
-#Project_1 {
-    background-color: green;
+.dogAbout,
+.dogGuess {
+  width: 30%;
+  height: 50%;
+  justify-content: center;
+  font-size: 1.6em;
+  border-radius: 0.5em;
+  margin-left: 30%;
+  padding: 1em 2em;
+  font-style: italic;
+}
+
+.dogAbout li {
+  list-style: none;
+}
+
+.dogPhoto1 {
+  width: 15em;
+  height: auto;
+  /* margin-left: 10%; */
+  margin-bottom: 1em;
+  box-shadow: 0 0 0.8em 0.3em #8253ce;
+  border: solid rgb(227, 221, 238) 3px;
+  padding: 0.3em;
+  border-radius: 0.5em; 
+}
+
+.dogPhoto1 li {
+  border-radius: 0.5em;
+}
+
+span {
+  font-weight: bold;
+}
+
+#but_submit {
+  background-color: #5603ad;
+  border: solid rgb(227, 221, 238) 3px;
+  border-radius: 1.5em;
+  padding: 0.4em;
+  font-size: 0.9em;
+  margin-left: 35%;
+  /* justify-content: center; */
+}
+#but_submit:hover {
+  background-color:  #470391;
+  transform: translateY(-1px);
+}
+#but_submit span {
+  color: rgb(137, 137, 247); 
+}
+
+#linkGues {
+  font-size: 1em;
+  color: #470391;
 }
 
 footer {
-    background-color: rgba(184, 222, 247, 0.776);
-    justify-items: center;
-    font-size: 1.2em;
-    margin-top: 1em;
-    padding: 1em;
+  justify-items: center;
+  font-size: 1.2em;
+  margin-top: 1em;
+  padding: 1em;
 }

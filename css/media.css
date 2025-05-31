@@ -1,0 +1,355 @@
+/* for screens up to 480px */
+@media(max-width: 480px) {
+h1 {
+  font-size: 1.3em;
+   margin-left: 1em;
+}
+
+h3 {
+  font-size: 0.8em;
+}
+
+h4 {
+  margin-left: 10%;
+  font-size: 1.3em;
+}
+
+h5 {
+   font-size: 1em;
+}
+
+.myPet {
+  width: auto;
+  height: 4em;
+}
+
+.titleMenu h3 {
+  margin-left: 0.3em;
+  margin-top: 2em;
+}
+
+.titleMenu h1 {
+  margin-left: 4em;
+  margin-top: 0.5em;
+}
+
+.navMenu {
+  /* margin-left: 28%; */
+  padding: 0.3em;
+  width: 98%;
+  border-radius: 0.5em;
+}
+
+.navMenu ul {
+  font-size: 1.3em;
+}
+
+.dogPhoto {
+  width: 10em;
+  height: auto;
+}
+
+.dogPic {
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto;
+  flex-direction: column-reverse;
+  gap: 1.5em;
+  margin: 1em;
+  justify-content: center;
+ 
+}
+
+.dogAbout,
+.dogGuess {
+  font-size: 0.8em;
+}
+
+.dogPhoto1 {
+  width: 5em;
+  height: auto;
+}
+
+#but_submit {
+  padding: 0.3em;
+  font-size: 0.7em;
+  margin-left: 35%;
+}
+
+#linkGues {
+  font-size: 0.8em;
+}
+
+footer {
+  font-size: 1.1em;
+  margin-top: 0.9em;
+  padding: 0.8em;
+}
+}
+
+
+/* small, mobile, (481px-768px) */
+@media (min-width: 481px) {
+h1 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  margin-left: 30%;
+  font-size: 1.5em;
+}
+
+h5 {
+   font-size: 1.1em;
+}
+
+.myPet {
+  width: auto;
+  height: 4em;
+}
+
+.titleMenu h3 {
+  margin-left: 0.3em;
+  margin-top: 1.5em;
+}
+
+.titleMenu h1 {
+  margin-left: 4em;
+  margin-top: 1.5em;
+}
+
+.navMenu {
+  /* margin-left: 28%; */
+  padding: 0.2em;
+  width: 98%;
+  border-radius: 0.4em;
+}
+
+.navMenu ul {
+  font-size: 1.3em;
+}
+
+.dogPhoto {
+  width: 10em;
+  height: auto;
+}
+
+.dogPic {
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto;
+  flex-direction: column-reverse;
+  gap: 1.7em;
+  margin: 1em;
+  justify-content: center;
+ 
+}
+
+.dogAbout,
+.dogGuess {
+  font-size: 1.1em;
+}
+
+.dogPhoto1 {
+  width: 7em;
+  height: auto;
+}
+
+#but_submit {
+  padding: 0.3em;
+  font-size: 0.7em;
+  margin-left: 35%;
+}
+
+#linkGues {
+  font-size: 0.8em;
+}
+
+footer {
+  font-size: 1.1em;
+  margin-top: 0.9em;
+  padding: 0.8em;
+}
+}
+
+/* tablet/laptop, (769px-1024px) */
+@media (min-width: 769px) {
+h1 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  margin-left: 30%;
+  font-size: 1.5em;
+}
+
+h5 {
+   font-size: 1.2em;
+}
+
+.myPet {
+  width: auto;
+  height: 5em;
+}
+
+.titleMenu h3 {
+  margin-left: 0.3em;
+  margin-top: 1.5em;
+}
+
+.titleMenu h1 {
+  margin-left: 4.5em;
+  margin-top: 1.5em;
+}
+
+.navMenu {
+  margin-left: 18%;
+  width: 80%;
+}
+
+.navMenu ul {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.dogPhoto {
+  width: 12em;
+  height: auto;
+}
+
+.dogPic {
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  flex-direction: column-reverse;
+  gap: 1em;
+  margin: 1em;
+  justify-content: center;
+ 
+}
+
+.dogAbout,
+.dogGuess {
+  font-size: 1.4em;
+}
+
+.dogPhoto1 {
+  width: 6em;
+  height: auto;
+}
+
+#but_submit {
+  padding: 0.4em;
+  font-size: 0.9em;
+  margin-left: 35%;
+}
+
+#linkGues {
+  font-size: 1em;
+}
+
+footer {
+  font-size: 1.1em;
+  margin-top: 0.9em;
+  padding: 0.9em;
+}
+}
+
+/* desctop, (>1025px) */
+@media (min-width: 1025px) {
+
+h1 {
+  font-size: 2.3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  margin-left: 30%;
+  font-size: 2.2em;
+}
+
+h5 {
+   font-size: 1.2em;
+}
+
+.myPet {
+  width: auto;
+  height: 6em;
+}
+
+.titleMenu h3 {
+  margin-left: 0.3em;
+  margin-top: 2em;
+}
+
+.titleMenu h1 {
+  margin-left: 5em;
+  margin-top: 1em;
+}
+
+.navMenu {
+  margin-left: 28%;
+  padding: 0.3em;
+  width: 70%;
+  
+}
+
+.navMenu ul {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.dogPhoto {
+  width: 12em;
+  height: auto;
+}
+
+.dogPic {
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto auto, auto;
+  flex-direction: column-reverse;
+  gap: 2em;
+  margin: 1em;
+  justify-content: center;
+ 
+}
+
+.dogAbout,
+.dogGuess {
+  font-size: 1.6em;
+}
+
+.dogPhoto1 {
+  width: 12em;
+  height: auto;
+}
+
+#but_submit {
+  padding: 0.4em;
+  font-size: 0.9em;
+  margin-left: 35%;
+}
+
+#linkGues {
+  font-size: 1em;
+}
+
+footer {
+  font-size: 1.2em;
+  margin-top: 1em;
+  padding: 1em;
+}
+ 
+}
